@@ -173,7 +173,7 @@ jupyter==1.0.0
 Data Analyst
 
 - 📧 [Telegram](https://t.me/chernyshevm)
-- 💼 [LinkedIn](#)
+- 💼 [LinkedIn](https://www.linkedin.com/in/максим-чернышев-81493351/)
 - 🐙 [GitHub](https://github.com/ChernyshevM)
 
 ---
