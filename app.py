@@ -22,13 +22,19 @@ st.set_page_config(
 )
 
 
-# 2️⃣ ЗАГРУЗКА ДАННЫХ (кэшируем, чтобы не грузить каждый раз)
+# 2️⃣ ЗАГРУЗКА ДАННЫХ (кэшируем)
 @st.cache_data
 def load_data():
     """Загружает и предварительно обрабатывает данные"""
-    data_path = Path(
-        r"C:\Users\User\Documents\MyPetProjects\fintech-case\data\processed\customers_clean.csv"
-    )
+    # ✅ ОТНОСИТЕЛЬНЫЙ ПУТЬ — работает локально и на Streamlit Cloud!
+    BASE_DIR = Path(__file__).parent
+    data_path = BASE_DIR / "data" / "processed" / "customers_clean.csv"
+
+    # Проверка существования файла
+    if not data_path.exists():
+        st.error(f"❌ Файл не найден: {data_path}")
+        st.stop()
+
     df = pd.read_csv(data_path)
 
     # Добавляем полезные признаки для фильтрации
