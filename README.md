@@ -163,7 +163,7 @@ jupyter==1.0.0
 
 ## 🔗 Ссылки
 
-- **📊 Интерактивный дашборд:** [https://fintech-churn.streamlit.app](#)
+- **📊 Интерактивный дашборд:** [https://fintech-case-chernyshevm.streamlit.app/](https://fintech-case-chernyshevm.streamlit.app/)
 
 ---
 
